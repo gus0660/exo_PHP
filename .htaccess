@@ -1,11 +1,20 @@
+AuthType Basic
+AuthName "Accès Protégé"
+AuthUserFile /wamp64/www/exo_PHP/.htpasswd
+require valid-user
+
 RewriteEngine On
+DirectoryIndex public/index.php
+
+RewriteCond %{REQUEST_URI} !public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ public/pages/$1.php [NC,L]
 
 # Réécriture pour les fichiers PHP dans le dossier 'page'
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ pages/$1.php [L]
+RewriteRule ^$ public/index.php [QSA,L]
 
-AuthType Basic
-AuthName "Accès Protégé"
-AuthUserFile .htpasswd
-require valid-user
+
+
