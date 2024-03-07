@@ -12,7 +12,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ public/pages/$1.php [NC,L]
 
-# Réécriture pour les fichiers PHP dans le dossier 'page'
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^$ public/index.php [QSA,L]
