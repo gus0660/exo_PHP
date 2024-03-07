@@ -15,3 +15,13 @@
     
 </body>
 </html>
+
+<?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["password"])) {
+        $password = $_POST["password"];
+        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
+        echo "<p>Le mot de passe crypté est : ". $hashedPassword . "</p>";
+    }
+?>
+
