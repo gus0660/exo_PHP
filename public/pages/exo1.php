@@ -10,11 +10,21 @@ include("../common/footer.php");
         <input type="submit" value="Afficher">
     </form>
     <?php
+    // Vérifie si le formulaire a été soumis en utilisant la méthode POST
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $input = $_POST['table']; // Récupération de la valeur saisie par l'utilisateur
 
+        // Récupère la valeur saisie dans le champ 'table' du formulaire
+        $input = $_POST['table'];
+
+        // Boucle for pour générer la table de multiplication
+        // Cette boucle s'exécute 10 fois, de 1 à 10
         for ($result = 1; $result <= 10; $result++) {
+
+            // Calcule le produit de la valeur saisie ($input) et de l'itérateur de la boucle ($result)
             $calc = $input * $result;
+
+            // Affiche le résultat de chaque multiplication
+            // Le caractère <br> est utilisé pour un saut de ligne en HTML
             echo "$input x $result = $calc<br>";
         }
     }
