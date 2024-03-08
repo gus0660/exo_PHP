@@ -5,7 +5,7 @@ include_once 'config.php';
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-     <meta name="description" content=""> <!--ne pas oublier de positionner pour SEO -->
+     <meta name="description" content=""> <!--à ne pas oublier pour SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice PHP</title>
     <link rel="stylesheet" href="main">
