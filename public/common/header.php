@@ -8,7 +8,7 @@ include_once 'config.php';
      <meta name="description" content=""> <!--ne pas oublier de positionner pour SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice PHP</title>
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css">
+    <link rel="stylesheet" href="main">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
