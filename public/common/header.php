@@ -1,3 +1,6 @@
+<?php
+include_once 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,16 +8,16 @@
      <meta name="description" content=""> <!--ne pas oublier de positionner pour SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice PHP</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
 <main class="text-center">
     <h1>Presentation PHP-algo</h1>
     <p>Création d'un petit générateur de mot de passe crypté</p>
     <a href="keygenGenerator">KeyGenGenerator</a>
-    <div><img src="images/logo.png" width="150px" alt="logo PHP"></div>
+    <div><img src="<?php echo BASE_URL; ?>images/logo.png" width="150px" alt="logo PHP"></div>
     <div class="text-center">
         <a href="public/pages/exo1.php">Exercice 1</a>
         <a href="public/pages/exo2.php">Exercice 2</a>
