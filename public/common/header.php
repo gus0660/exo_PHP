@@ -16,7 +16,7 @@
     <a href="keygenGenerator">KeyGenGenerator</a>
     <div><img src="images/logo.png" width="150px" alt="logo PHP"></div>
     <div class="text-center">
-        <a href="public/pages/exo1.php">Exercice 1</a>
+        <a href="pages/exo1.php">Exercice 1</a>
         <a href="public/pages/exo2.php">Exercice 2</a>
         <a href="public/pages/exo3.php">Exercice 3</a>
         <a href="public/pages/exo4.php">Exercice 4</a>
