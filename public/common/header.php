@@ -19,7 +19,7 @@ include_once 'config.php';
     <a href="keygenGenerator">KeyGenGenerator</a>
     <div><img src="<?php echo BASE_URL; ?>images/logo.png" width="150px" alt="logo PHP"></div>
     <div class="text-center">
-        
+        <a href="index">Accueil</a>
         <a href="exo1">Exercice 1</a>
         <a href="exo2">Exercice 2</a>
         <a href="exo3">Exercice 3</a>
