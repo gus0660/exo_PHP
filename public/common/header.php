@@ -19,15 +19,16 @@ include_once 'config.php';
     <a href="keygenGenerator">KeyGenGenerator</a>
     <div><img src="<?php echo BASE_URL; ?>images/logo.png" width="150px" alt="logo PHP"></div>
     <div class="text-center">
-        <a href="public/pages/exo1.php">Exercice 1</a>
-        <a href="public/pages/exo2.php">Exercice 2</a>
-        <a href="public/pages/exo3.php">Exercice 3</a>
-        <a href="public/pages/exo4.php">Exercice 4</a>
-        <a href="public/pages/exo5.php">Exercice 5</a>
-        <a href="public/pages/exo6.php">Exercice 6</a>
-        <a href="public/pages/exo7.php">Exercice 7</a>
-        <a href="public/pages/exo8.php">Exercice 8</a>
-        <a href="public/pages/exo9.php">Exercice 9</a>
-        <a href="public/pages/exo10.php">Exercice 10</a>
+        
+        <a href="exo1">Exercice 1</a>
+        <a href="exo2">Exercice 2</a>
+        <a href="exo3">Exercice 3</a>
+        <a href="exo4">Exercice 4</a>
+        <a href="exo5">Exercice 5</a>
+        <a href="exo6">Exercice 6</a>
+        <a href="exo7">Exercice 7</a>
+        <a href="exo8">Exercice 8</a>
+        <a href="exo9">Exercice 9</a>
+        <a href="exo10">Exercice 10</a>
     </div>
 </main>
