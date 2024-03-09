@@ -28,24 +28,6 @@ include("../common/footer.php");
     }else{
         echo "Merci de choisir un nombre";
     }
-    
-    
-
-        
-        // $input = $_POST['table'];
-
-        // Boucle for pour générer la table de multiplication
-        // Cette boucle s'exécute 10 fois, de 1 à 10
-        // for ($result = 1; $result <= 10; $result++) {
-
-            // Calcule le produit de la valeur saisie ($input) et de l'itérateur de la boucle ($result)
-            // $calc = $input * $result;
-
-            // Affiche le résultat de chaque multiplication
-            // Le caractère <br> est utilisé pour un saut de ligne en HTML
-            // echo "$input x $result = $calc<br>";
-        // }
-    // }
     ?>
 </main>
 </body>
