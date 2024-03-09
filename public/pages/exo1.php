@@ -33,7 +33,7 @@ include("../common/footer.php");
     ?>
     
 </main>
-<script>
+<!-- <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const form = document.querySelector('form');
             
@@ -57,7 +57,7 @@ include("../common/footer.php");
                 }
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
