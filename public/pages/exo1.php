@@ -12,22 +12,22 @@ include("../common/footer.php");
     <?php
 // $_POST est une super globale(qu'il faut connaitre) prévus pour aller chercher quelque chose qui est "posté"
 //  isset c'est "is to set" donc (ce qu'y est créé) le POST avec la valeur de l'input 'table'
-    if(isset($_POST['table']) && ($_POST['table'] !== "")){// && verifie que le post n'est pas égal à vide
+  //if(isset($_POST['table']) && ($_POST['table'] !== "")){ && verifie que le post n'est pas égal à vide
 
 //en php on déclare la variable par $ suivi sans espace du nom de cette variable
 //création d'une variable "chiffre" en récupèrant($_POST) la valeur saisie dans le champ 'table' du formulaire
-        $chiffre = $_POST['table'];
+        // $chiffre = $_POST['table'];
 
-        for($i = 1; $i <= 10; $i++) {
+        // for($i = 1; $i <= 10; $i++) {
 
 //echo sert à afficher coté client(sur le DOM => page html),
 //ne pas oublier les doubles guillemets pour afficher des caractères ou pour insérer du html(en caractères donc)
 //pour concaténer en php c'est "." point
-            echo "<p>" . $i . " x " . $chiffre . " = " . $i * $chiffre . "</p>";
-        }
-    }else{
-        echo "Merci de choisir un nombre";
-    }
+    //         echo "<p>" . $i . " x " . $chiffre . " = " . $i * $chiffre . "</p>";
+    //     }
+    // }else{
+    //     echo "Merci de choisir un nombre";
+    // }
     ?>
 </main>
 </body>
