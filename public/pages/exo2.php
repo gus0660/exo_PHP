@@ -4,7 +4,7 @@ include("../common/footer.php");
 ?>
 <main class="text-center">
     <h2 class="p-4">EXERCICE 2 Affichage d'une pyramide</h2>
-    <form method="post" action="exo2.php">
+    <form method="post" action="#">
         <label for="table">Choisir la hauteur de la pyramide</label>
         <input type="number" id="table" name="table" required>
         <input type="submit" value="Afficher">
@@ -17,6 +17,11 @@ include("../common/footer.php");
 if(isset($_POST['table']) && $_POST['table'] > 0){
     $chiffre = $_POST['table'];
     echo "<h3> Pyramide de hauteur " . $chiffre . "</h3>";
+    $text = "";
+    for($i = 0; $i < $chiffre; $i++){
+        $text .= "xx";//$text = $text . "xx"(php)     $text = $text + "xx"(javascript)     $text += "xx"(javascript)
+        echo $text . "<br>";
+    }
 };
 
 ?>
