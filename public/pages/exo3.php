@@ -29,7 +29,36 @@ include("../common/footer.php");
     //     echo "Merci de saisir une valeur";
     // }
     ?>
+
 </main>
+<script>
+    const form = document.querySelector('#form');
+
+
+
+    const result = document.querySelector('#result');
+    form.addEventListener('submit', function() {
+        event.preventDefault();
+        let rayon = document.querySelector('#rayon').value;
+        console.log(rayon);
+        let perimetre = document.querySelector('#perimetre').checked;
+        let aire = document.querySelector('#aire').checked;
+        if (rayon > 0) {
+            if (perimetre) {
+                let resultat = rayon * 2 * Math.PI;
+                let line = document.createElement('p');
+                line.innerHTML = " le périmètre du cercle de rayon : " + rayon + "<br> est : " + resultat + "<br>";
+                result.appendChild(line);
+            }
+            if (aire) {
+                let resultat = rayon * rayon * Math.PI;
+                let line = document.createElement('p');
+                line.innerHTML = " l'aire du cercle de rayon : " + rayon + "<br> est : " + resultat + "<br>";
+                result.appendChild(line);
+            }
+        }
+    });
+</script>
 </body>
 
 </html>
