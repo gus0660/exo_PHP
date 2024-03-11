@@ -13,3 +13,10 @@ include("../common/footer.php");
 </main>
 </body>
 </html>
+<?php
+if(isset($_POST['table']) && $_POST['table'] > 0){
+    $chiffre = $_POST['table'];
+    echo "<h3> Pyramide de hauteur " . $chiffre . "</h3>";
+};
+
+?>
