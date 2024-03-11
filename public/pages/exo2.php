@@ -8,9 +8,10 @@ include("../common/footer.php");
         <label for="table">Choisir la hauteur de la pyramide</label>
         <input type="number" id="table" name="table" required>
         <input type="submit" value="Afficher">
-        <div id="result"></div>
+        
     </form>
 </main>
+<div id="result"></div>
 </body>
 </html>
 <?php
@@ -29,5 +30,23 @@ include("../common/footer.php");
 // };
 ?>
 <script>
-    const form = document.querySelector('form');
+    const form = document.querySelector('#form');
+    let resultat = document.querySelector('#result');
+        form.addEventListener('submit', function(){
+            event.preventDefault();
+            let chiffre = document.querySelector('#table').value;
+            let text = "";
+            for(i = 1; i <= chiffre; i++){
+                text = text + "xx";
+                let line = document.createElement('p');
+                line.innerHTML = text;
+                resultat.appendChild(line);
+            }
+        //     for(i = chiffre; i != 0; i--){
+        //         text = text - "xx";
+        //         let line = document.createElement('p');
+        //         line.innerHTML = text;
+        //         resultat.appendChild(line);
+        // };
+    })
 </script>
