@@ -21,14 +21,14 @@ include_once 'config.php';
     <div class="text-center">
         <a class="p-2"  href="<?php echo BASE_URL; ?>" style="color: black;">Accueil</a>
         <a class="p-2"  href="<?php echo BASE_URL; ?>exo1">Exercice 1</a>
-        <a class="p-2"  href="exo2">Exercice 2</a>
-        <a class="p-2"  href="exo3">Exercice 3</a>
-        <a class="p-2"  href="exo4">Exercice 4</a>
-        <a class="p-2"  href="exo5">Exercice 5</a>
-        <a class="p-2"  href="exo6">Exercice 6</a>
-        <a class="p-2"  href="exo7">Exercice 7</a>
-        <a class="p-2"  href="exo8">Exercice 8</a>
-        <a class="p-2"  href="exo9">Exercice 9</a>
-        <a class="p-2"  href="exo10">Exercice 10</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo2">Exercice 2</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo3">Exercice 3</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo4">Exercice 4</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo5">Exercice 5</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo6">Exercice 6</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo7">Exercice 7</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo8">Exercice 8</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo9">Exercice 9</a>
+        <a class="p-2"  href="<?php echo BASE_URL; ?>exo10">Exercice 10</a>
     </div>
 </main>
