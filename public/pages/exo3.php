@@ -15,20 +15,21 @@ include("../common/footer.php");
     </form>
     <div id="result"></div>
     <?php
-if(isset($_POST['rayon']) && $_POST['rayon'] > 0){
-    $rayon = $_POST['rayon'];
-    echo "<p>";
-    if(isset($_POST['perimetre'])){
-        echo " le périmètre du cercle de rayon : " . $rayon . "<br> est : " . ($rayon * 2 * pi()) . "<br>";
-    }
-    if(isset($_POST['aire'])){
-        echo " l'aire du cercle de rayon : " . $rayon . "<br> est : " . ($rayon * $rayon * pi()) . "<br>";
-        echo "</p>";
-    }
-}else{
-        echo "Merci de saisir une valeur";
-    }
-?>
+    // if (isset($_POST['rayon']) && $_POST['rayon'] > 0) {
+    //     $rayon = $_POST['rayon'];
+    //     echo "<p>";
+    //     if (isset($_POST['perimetre'])) {
+    //         echo " le périmètre du cercle de rayon : " . $rayon . "<br> est : " . ($rayon * 2 * pi()) . "<br>";
+    //     }
+    //     if (isset($_POST['aire'])) {
+    //         echo " l'aire du cercle de rayon : " . $rayon . "<br> est : " . ($rayon * $rayon * pi()) . "<br>";
+    //         echo "</p>";
+    //     }
+    // } else {
+    //     echo "Merci de saisir une valeur";
+    // }
+    ?>
 </main>
 </body>
+
 </html>
