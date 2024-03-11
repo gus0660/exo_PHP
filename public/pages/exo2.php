@@ -19,9 +19,12 @@ if(isset($_POST['table']) && $_POST['table'] > 0){
     echo "<h3> Pyramide de hauteur " . $chiffre . "</h3>";
     $text = "";
     for($i = 0; $i < $chiffre; $i++){
-        $text .= "xx";//$text = $text . "xx"(php)     $text = $text + "xx"(javascript)     $text += "xx"(javascript)
+        $text .= "xx";
+        echo $text . "<br>";
+    }
+    for($i = $chiffre - 1; $i >= 0; $i--){
+        $text = substr($text,0,-2);
         echo $text . "<br>";
     }
 };
-
 ?>
