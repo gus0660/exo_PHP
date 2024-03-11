@@ -4,7 +4,7 @@ include("../common/footer.php");
 ?>
 <main class="text-center">
     <h2 class="p-4">EXERCICE 2 Affichage d'une pyramide</h2>
-    <form method="post" action="#">
+    <form method="post" action="#" id="form">
         <label for="table">Choisir la hauteur de la pyramide</label>
         <input type="number" id="table" name="table" required>
         <input type="submit" value="Afficher">
@@ -28,3 +28,6 @@ include("../common/footer.php");
 //     }
 // };
 ?>
+<script>
+    const form = document.querySelector('form');
+</script>
