@@ -17,3 +17,6 @@ include("../common/footer.php");
 </main>
 </body>
 </html>
+<?php
+$chiffreAleatoire = rand(1, 10);
+?>
