@@ -15,6 +15,9 @@ include("../common/footer.php");
     </form>
     <h3>Saisir une valeur dans le champ ci-dessus</h3>
 </main>
+<script>
+    
+</script>
 </body>
 </html>
 <?php
