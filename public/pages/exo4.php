@@ -14,6 +14,7 @@ include("../common/footer.php");
         <input type="submit" value="Valider">
     </form>
     <h3>Saisir une valeur dans le champ ci-dessus</h3>
+    <p id="message"></p>
 </main>
 <script>
     
