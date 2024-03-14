@@ -42,7 +42,7 @@ if (isset($_POST['chiffre'])) {// on va chercher le "post"
     } else if ($chiffre > $_SESSION['chiffreAleatoire']) {// si le "post" est supérieur
         echo "Le nombre choisi est TROP GRAND!!";
     } else {
-        // echo "GAGNEE !!";
+        echo "GAGNEE !!";
     // }
 // }
 ?>
