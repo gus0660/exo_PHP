@@ -28,7 +28,7 @@ session_start();// commence ou continue la session(qu'on peu aller chercher avec
 // Au départ, on offre la possibilité de réinitialisation si demandée au click sur "reinitialiser"
 if (isset($_POST['reinit'])) {// on va chercher le "post"($_POST) de "reinit", si il est présent(if isset) au click sur "reinitialiser" alors :
     unset($_SESSION['chiffreAleatoire']);// on enlève(unset) la variable(chiffreAleatoire) dans la session qu'on va chercher($_SESSION)
-// }
+ }
 
 // Générer et stocker un nombre aléatoire s'il n'existe pas déjà
 //if(!isset($_SESSION['chiffreAleatoire'])) { si la variable(chiffreAleatoire) n'est pas présente(if !isset) dans la session qu'on va chercher
