@@ -35,7 +35,7 @@ if(!isset($_SESSION['chiffreAleatoire'])) {// si la variable(chiffreAleatoire) n
     $_SESSION['chiffreAleatoire'] = rand(1, 10);// on génère un nombre aléatoire entre 1 et 10 et on l'enregistre dans la session qu'on va chercher
 }
 
-//if (isset($_POST['chiffre'])) { on va chercher le "post"
+if (isset($_POST['chiffre'])) {// on va chercher le "post"
 //    $chiffre = $_POST['chiffre']; on sauvegarde le "post" dans la variable(chiffre)
 //    if ($chiffre < $_SESSION['chiffreAleatoire']) { si le "post" est inférieur
         // echo "Le nombre choisi est TROP PETIT !!";
