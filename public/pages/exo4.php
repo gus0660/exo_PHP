@@ -44,5 +44,5 @@ if (isset($_POST['chiffre'])) {// on va chercher le "post"
     } else {
         echo "GAGNEE !!";
     }
-// }
+}
 ?>
