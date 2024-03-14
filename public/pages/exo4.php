@@ -23,7 +23,7 @@ include("../common/footer.php");
 </html>
 <?php
 // le principe c'est qu'il faut stocker le nombre choisi par l'ordinateur dans une variable donc créer une session.
-//session_start(); commence ou continue la session(qu'on peu aller chercher avec "$_SESSION[]")
+session_start();// commence ou continue la session(qu'on peu aller chercher avec "$_SESSION[]")
 
 // Au départ, on offre la possibilité de réinitialisation si demandée au click sur "reinitialiser"
 //if (isset($_POST['reinit'])) { on va chercher le "post"($_POST) de "reinit", si il est présent(if isset) au click sur "reinitialiser" alors :
