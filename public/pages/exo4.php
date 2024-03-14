@@ -26,7 +26,7 @@ include("../common/footer.php");
 session_start();// commence ou continue la session(qu'on peu aller chercher avec "$_SESSION[]")
 
 // Au départ, on offre la possibilité de réinitialisation si demandée au click sur "reinitialiser"
-//if (isset($_POST['reinit'])) { on va chercher le "post"($_POST) de "reinit", si il est présent(if isset) au click sur "reinitialiser" alors :
+if (isset($_POST['reinit'])) {// on va chercher le "post"($_POST) de "reinit", si il est présent(if isset) au click sur "reinitialiser" alors :
 //    unset($_SESSION['chiffreAleatoire']); on enlève(unset) la variable(chiffreAleatoire) dans la session qu'on va chercher($_SESSION)
 // }
 
