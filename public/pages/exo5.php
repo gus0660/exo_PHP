@@ -11,10 +11,24 @@ include("../common/footer.php");
     </form>
     <h3>Saisir une valeur dans le champ ci-dessus</h3>
 
+<?php
+// le but : après avoir entré une valeur dans l'input "Combien de notes", et valider, générer le nombre de notes sous forme d'inputs avec un label "note N°1, 2, etc..
+// donc il faut définir la variable nbNotes en allant chercher la valeur du "get" avec $_GET et générer un tableau avec le nombre de notes
+// 
+if(isset($_GET['nb']) && $_GET['nb'] > 0){
+$nbNotes = $_GET['nb'];
+// echo "<h4>$nbNotes notes</h4>";
+    for ($i = 1; $i <= $nbNotes; $i++) {
+        echo "<label for='note$i'>Note $i : </label>";
+        echo "<input type='number' name='note$i' id='note$i'>";
+        echo "<br>";
+    }
+}
+?>
+
 </main>
 
     
 </body>
 </html>
-<!-- le but : après avoir entré une valeur dans l'input "Combien de notes", et valider, générer le nombre de notes sous forme d'inputs avec un label "note N°1, 2, etc.. -->
-<!-- donc il faut aller chercher le "get" avec $_GET -->
+
