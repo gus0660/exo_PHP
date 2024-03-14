@@ -7,7 +7,6 @@ include("../common/footer.php");
     <form action="#" method="get">
         <label for="nb">Combien de notes : </label>
         <input type="number" name="nb" id="nb">
-        <br>
         <input type="submit" value="Valider">
     </form>
     <h3>Saisir une valeur dans le champ ci-dessus</h3>
