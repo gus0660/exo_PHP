@@ -27,9 +27,12 @@ $nbNotes = $_GET['nb'];
         echo "<br>";
         echo "</form>";
     }
+    echo "<h5 class='p-1'>Veuillez Saisir les notes pour calculer leur moyenne</h5>";
     echo "<input class='m-1' type='submit' value='Calculer'>";
 }
+if(isset($_GET['note']) && $_GET['note'] > 0){
 
+}
 ?>
 
 </main>
