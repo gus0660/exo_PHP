@@ -36,7 +36,7 @@ if(!isset($_SESSION['chiffreAleatoire'])) {// si la variable(chiffreAleatoire) n
 }
 
 if (isset($_POST['chiffre'])) {// on va chercher le "post"
-//    $chiffre = $_POST['chiffre']; on sauvegarde le "post" dans la variable(chiffre)
+    $chiffre = $_POST['chiffre'];// on sauvegarde le "post" dans la variable(chiffre)
 //    if ($chiffre < $_SESSION['chiffreAleatoire']) { si le "post" est inférieur
         // echo "Le nombre choisi est TROP PETIT !!";
 //    } else if ($chiffre > $_SESSION['chiffreAleatoire']) { si le "post" est supérieur
