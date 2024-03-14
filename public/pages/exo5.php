@@ -13,17 +13,23 @@ include("../common/footer.php");
 
 <?php
 // le but : après avoir entré une valeur dans l'input "Combien de notes", et valider, générer le nombre de notes sous forme d'inputs avec un label "note N°1, 2, etc..
-// donc il faut définir la variable nbNotes en allant chercher la valeur du "get" avec $_GET et générer un tableau avec le nombre de notes
-// 
+// donc il faut définir la variable nbNotes en allant chercher la valeur du "get" avec $_GET et générer un tableau qui soit un fomulaire avec le nombre de notes et un bouton "calculer" pour calculer la moyenne.
+// ensuite, on peut calculer la moyenne de ces notes et afficher la valeur de la moyenne dans un label "moyenne"
+// pour calculer la moyenne, il faut récupérer les valeurs des notes qu'on aura entré dans le tableau qui à été généré précédemment
+// pour récupérer les valeurs des notes qu'on aura entré dans le tableau qui à été généré précédemment, on peut utiliser la fonction array_sum()
 if(isset($_GET['nb']) && $_GET['nb'] > 0){
 $nbNotes = $_GET['nb'];
 // echo "<h4>$nbNotes notes</h4>";
     for ($i = 1; $i <= $nbNotes; $i++) {
-        echo "<label for='note$i'>Note $i : </label>";
-        echo "<input type='number' name='note$i' id='note$i'>";
+        echo "<form action='#' method='get'>";
+        echo "<label class='m-1' for='note'>Note $i : </label>";
+        echo "<input class='m-1' type='number' name='note' id='note'>";
         echo "<br>";
+        echo "</form>";
     }
+    echo "<input class='m-1' type='submit' value='Calculer'>";
 }
+
 ?>
 
 </main>
