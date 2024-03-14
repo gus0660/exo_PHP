@@ -43,6 +43,6 @@ if (isset($_POST['chiffre'])) {// on va chercher le "post"
         echo "Le nombre choisi est TROP GRAND!!";
     } else {
         echo "GAGNEE !!";
-    // }
+    }
 // }
 ?>
