@@ -32,7 +32,7 @@ if (isset($_POST['reinit'])) {// on va chercher le "post"($_POST) de "reinit", s
 
 // Générer et stocker un nombre aléatoire s'il n'existe pas déjà
 if(!isset($_SESSION['chiffreAleatoire'])) {// si la variable(chiffreAleatoire) n'est pas présente(if !isset) dans la session qu'on va chercher
-//    $_SESSION['chiffreAleatoire'] = rand(1, 10); on génère un nombre aléatoire entre 1 et 10 et on l'enregistre dans la session qu'on va chercher
+    $_SESSION['chiffreAleatoire'] = rand(1, 10);// on génère un nombre aléatoire entre 1 et 10 et on l'enregistre dans la session qu'on va chercher
 // }
 
 //if (isset($_POST['chiffre'])) { on va chercher le "post"
