@@ -19,23 +19,24 @@ include("../common/footer.php");
     // pour récupérer les valeurs des notes qu'on aura entré dans le tableau qui à été généré précédemment, on peut utiliser la fonction array_sum()
     if (isset($_GET['nb']) && $_GET['nb'] > 0) {
         $nbNotes = $_GET['nb'];
-        // echo "<h4>$nbNotes notes</h4>";
+        echo "<form action='#' method='POST'>";
         for ($i = 1; $i <= $nbNotes; $i++) {
-            echo "<form action='#' method='post'>";
-            echo "<label class='m-1' for='note'>Note $i : </label>";
-            echo "<input class='m-1' type='number' name='note' id='note'>";
+            echo "<label class='m-1' for='note$i'>Note $i : </label>";
+            echo "<input class='m-1' type='number' name='notes[]' id='note$i'>";
             echo "<br>";
-            echo "</form>";
         }
         echo "<h5 class='p-1'>Veuillez Saisir les notes pour calculer leur moyenne</h5>";
-        echo "<input class='m-1' type='submit' value='Calculer'>";
-        if (isset($_POST['note']) && $_POST['note'] > 0) {
-
-            $moyenne = array_sum($_POST['note']) / $nbNotes;
-            
+        echo "<input class='m-1' type='submit' value='Calculer'><br>";
+        echo "</form>";
+        if(isset($_POST['notes'])){
+            // Calculez la moyenne des notes
+            $notes = $_POST['notes'];
+            $totalNotes = array_sum($notes);
+            $moyenne = $totalNotes / $nbNotes;
+            echo "<h5 class='p-1'>La moyenne des notes est : $moyenne</h5>";
         }
-        echo "<h5 class='p-1'>La moyenne de vos notes est : $moyenne</h5>";
     }
+    
 
     // if(isset($_GET['note'])){
     //     $moyenne = array_sum($_GET['note']) / $nbNotes;
