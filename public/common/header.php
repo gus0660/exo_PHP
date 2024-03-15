@@ -16,7 +16,7 @@ include_once 'config.php';
 <main class="text-center">
     <h1>Presentation PHP-algo</h1>
     <p>Création d'un petit générateur de mot de passe crypté</p>
-    <a href="keygenGenerator">KeyGenGenerator</a>
+    <a href="<?php echo BASE_URL; ?>keygenGenerator">KeyGenGenerator</a>
     <div><img src="<?php echo BASE_URL; ?>images/logo.png" width="150px" alt="logo PHP"></div>
     <div class="text-center">
         <a class="p-2"  href="<?php echo BASE_URL; ?>" style="color: black;">Accueil</a>
