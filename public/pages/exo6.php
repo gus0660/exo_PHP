@@ -3,7 +3,7 @@ include("../common/header.php");
 include("../common/footer.php");
 ?>
 <main class="text-center">
-    <h2 class="p-4">EXERCICE 6</h2>
+    <h2 class="p-4">EXERCICE 6 - Choix du personnage</h2>
 
 </main>
 
