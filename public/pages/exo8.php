@@ -7,7 +7,7 @@ include("../common/footer.php");
     <form action="#" method="post">
         <label for="perso">Personnage : </label>
         <select name="perso" id="perso" onchange="submit()">
-            <option value="p1" selected>Luke</option>
+            <option value="p1">Luke</option>
             <option value="p2">Katy</option>
             <option value="p3">Marc</option>
         </select>
@@ -17,8 +17,35 @@ include("../common/footer.php");
     <div class="gauche"></div>
     <div class="gauche"></div>
     <div class="clearB"></div>
+    <!-- pour chaque nom sélectionné, son image s'affiche et ses caractéristiques aussi en dessous -->
+    <!--  -->
 <?php
-
+$perso = [
+    [
+        "Nom : " => "Luke",
+        "Age : " => 27,
+        "Sexe : " => "Homme",
+        "Force : " => "5",
+        "Agilité : " => "4",
+    ],
+    [
+        "Nom : " => "Katy",
+        "Age : " => 22,
+        "Sexe : " => "Femme",
+        "Force : " => "3",
+        "Agilité : " => "6",
+    ],
+    [
+        "Nom : " => "Marc",
+        "Age : " => 33,
+        "Sexe : " => "Homme",
+        "Force : " => "7",
+        "Agilité : " => "2",
+    ]
+]
+if(isset($perso)){
+    
+}
 ?>
 </main>
 
