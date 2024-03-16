@@ -10,3 +10,8 @@ include("../common/footer.php");
     
 </body>
 </html>
+<!-- le but : avoir un input qui nous permet de choisir entre homme ou femme, après avoir validé avec le bouton "valider" -->
+<!-- une image en rapport au choix qu'on a fait, apparait -->
+<?php
+
+?>
