@@ -52,7 +52,7 @@ include("../common/footer.php");
             "Image" => "./images/playerM.png"
         ]
     ];
-    
+
 // Cette instruction conditionnelle vérifie deux choses :
 // 1. Si une valeur a été sélectionnée et assignée à la variable $selected_perso
 // 2. Si la valeur dans $selected_perso correspond à une clé existante du tableau $persos
@@ -71,10 +71,15 @@ include("../common/footer.php");
 
 // Cette boucle 'foreach' parcourt chaque paire clé-valeur dans le sous tableau du personnage sélectionné
         foreach ($persos[$selected_perso] as $key => $value) {
+
+// On vérifie que si la clé en cours n'est pas 'Image'
             if ($key !== "Image") {
+// Si c'est le cas (c'est à dire, ce n'est pas une image mais une autre propriété du personnage comme le nom)
+//  Alors on affiche la clé et la valeur associée à cette clé dans la div sous la forme d'un <p>
                 echo "<p>$key : $value</p>";
             }
         }
+// Fermeture de la div class="gauche" commencée précédemment
         echo '</div>';
     }
     ?>
