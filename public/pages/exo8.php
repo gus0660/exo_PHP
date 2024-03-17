@@ -52,10 +52,17 @@ include("../common/footer.php");
             "Image" => "./images/playerM.png"
         ]
     ];
-    // Vérifier si un personnage a été sélectionné
-    // Si un personnage a été sélectionné, affichez ses informations
+// Cette instruction conditionnelle vérifie deux choses :
+// 1. Si une valeur a été sélectionnée et assignée à la variable $selected_perso
+// 2. Si la valeur dans $selected_perso correspond à une clé existante du tableau $persos
     if ($selected_perso && array_key_exists($selected_perso, $persos)) {
+
+        // Si les 2 conditions ci-dessus sont remplies, le bloc de code suivant s'exécute
         
+// Cette ligne crée une (div) avec une classe "gauche"
+// Elle contient une balise image(img), dont la source(src) est obtenue du tableau $persos
+// En utilisant la clé $selected_perso pour trouver le sous tableau correct, et ensuite en extrayant l'URL de l'image correspondante
+// L'attribut 'alt' de l'image est défini par la valeur 'Nom' du sous tableau correspondant.
         echo '<div class="gauche"><img src="' . $persos[$selected_perso]['Image'] . '" alt="' . $persos[$selected_perso]['Nom'] . '" width="100" height="150"></div>';
 
         echo '<div class="gauche">';
