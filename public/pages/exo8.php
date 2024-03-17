@@ -58,13 +58,13 @@ include("../common/footer.php");
     if ($selected_perso && array_key_exists($selected_perso, $persos)) {
 
         // Si les 2 conditions ci-dessus sont remplies, le bloc de code suivant s'exécute
-        
+
 // Cette ligne crée une (div) avec une classe "gauche"
 // Elle contient une balise image(img), dont la source(src) est obtenue du tableau $persos
 // En utilisant la clé $selected_perso pour trouver le sous tableau correct, et ensuite en extrayant l'URL de l'image correspondante
 // L'attribut 'alt' de l'image est défini par la valeur 'Nom' du sous tableau correspondant.
         echo '<div class="gauche"><img src="' . $persos[$selected_perso]['Image'] . '" alt="' . $persos[$selected_perso]['Nom'] . '" width="100" height="150"></div>';
-
+// Une autre div est crée avec la classe "gauche"
         echo '<div class="gauche">';
         foreach ($persos[$selected_perso] as $key => $value) {
             if ($key !== "Image") {
