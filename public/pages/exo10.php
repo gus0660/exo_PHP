@@ -33,6 +33,7 @@ $persos = [
         "Image" => "./images/playerM.png"
     ]
 ];
+$selected_perso = $_POST['perso'] ?? null;
 ?>
 </main>
 
