@@ -6,7 +6,7 @@ include("../common/footer.php");
 <h1 class="p-4">EXERCICE 10 - Sélection du personnage</h1>
     <form action="#" method="post">
         <label for="perso">Personnage : </label>
-        <select name="perso" id="perso" onchange="this.form.submit()">
+        
         
         <br>
     </form>
