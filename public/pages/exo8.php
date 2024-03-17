@@ -52,6 +52,7 @@ include("../common/footer.php");
             "Image" => "./images/playerM.png"
         ]
     ];
+    
 // Cette instruction conditionnelle vérifie deux choses :
 // 1. Si une valeur a été sélectionnée et assignée à la variable $selected_perso
 // 2. Si la valeur dans $selected_perso correspond à une clé existante du tableau $persos
@@ -64,8 +65,11 @@ include("../common/footer.php");
 // En utilisant la clé $selected_perso pour trouver le sous tableau correct, et ensuite en extrayant l'URL de l'image correspondante
 // L'attribut 'alt' de l'image est défini par la valeur 'Nom' du sous tableau correspondant.
         echo '<div class="gauche"><img src="' . $persos[$selected_perso]['Image'] . '" alt="' . $persos[$selected_perso]['Nom'] . '" width="100" height="150"></div>';
+
 // Une autre div est crée avec la classe "gauche"
         echo '<div class="gauche">';
+
+// Cette boucle 'foreach' parcourt chaque paire clé-valeur dans le sous tableau du personnage sélectionné
         foreach ($persos[$selected_perso] as $key => $value) {
             if ($key !== "Image") {
                 echo "<p>$key : $value</p>";
