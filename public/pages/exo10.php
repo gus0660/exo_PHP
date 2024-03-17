@@ -36,8 +36,13 @@ $persos = [
 // $selected_perso = $_POST['perso'] ?? null;
 foreach ($persos as $key => $value) {
     echo "<div class='gauche'>
-    <img src='{$value['Image']}' alt='{$value['Nom']}' width='100' height='150'>
-    </div>";
+            <img src='{$value['Image']}' alt='{$value['Nom']}' width='100' height='150'>
+            <p class='m-0'>Nom : {$value['Nom']}</p>
+            <p class='m-0'>Age : {$value['Age']}</p>
+            <p class='m-0'>Sexe : {$value['Sexe']}</p>
+            <p class='m-0'>Force : {$value['Force']}</p>
+            <p class='m-0'>Agilité : {$value['Agilité']}</p>
+        </div>";
 }
 ?>
 </main>
