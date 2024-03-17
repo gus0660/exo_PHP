@@ -3,7 +3,7 @@ include("../common/header.php");
 include("../common/footer.php");
 ?>
 <main class="text-center">
-<h1 class="p-4">EXERCICE 10 - Sélection du personnage</h1>
+<h1 class="p-4">EXERCICE 10 - Affichage des personnages</h1>
     <h2>Personnage : </h2>
     
 <?php
@@ -33,7 +33,12 @@ $persos = [
         "Image" => "./images/playerM.png"
     ]
 ];
-$selected_perso = $_POST['perso'] ?? null;
+// $selected_perso = $_POST['perso'] ?? null;
+foreach ($persos as $key => $value) {
+    echo "<div class='gauche'>
+    <img src='{$value['Image']}' alt='{$value['Nom']}' width='100' height='150'>
+    </div>";
+}
 ?>
 </main>
 
