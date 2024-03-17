@@ -14,12 +14,15 @@ include("../common/footer.php");
         <br>
     </form>
     <h2>Personnage : </h2>
-    <div class="gauche"></div>
-    <div class="gauche"></div>
+    <!-- <div class="gauche"></div>
+    <div class="gauche"></div> -->
     <div class="clearB"></div>
-    <!-- pour chaque nom sélectionné, son image s'affiche et ses caractéristiques aussi en dessous -->
-    <!--  -->
+    
 <?php
+// pour chaque nom sélectionné dans le select,
+// son image s'affiche et ses caractéristiques aussi en dessous
+// on doit générer une div class"gauche" avec l'image correspodante pour chaque perso
+// une autre div class"gauche" pour les caractéristiques du perso
 $perso = [
     [
         "Nom : " => "Luke",
@@ -43,9 +46,7 @@ $perso = [
         "Agilité : " => "2",
     ]
 ]
-if(isset($perso)){
-    
-}
+
 ?>
 </main>
 
